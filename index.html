@@ -3,27 +3,55 @@
 
     <head>
         <style>
-            .logo-and-bar {
-                display: block;
+            #logo {
+                display: flex;
+                justify-content: center;
                 margin: auto;
+                padding: 50px;
+            }
+            #searchbar {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+            #buttons {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+            button {
+                margin: 10px;
+                margin-top: 30px;
+            }
+            li a {
+                display: block;
+                float: left;
+                margin-right: 30px;
+            }
+            ul {
+                list-style-type: none;
+                background-color: lightgrey;
+                padding-bottom: 20px;
             }
         </style>
     </head>
     <body>
-        <div id="left header">
-            About
-            <br>
-            Store
-        </div>
-        <div id="right header">
-            Gmail
-            <br>
-            Images
-        </div>
-        <div id="logo-and-bar">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Gmail</a></li>
+            <li><a href="#">Images</a></li>
+        </ul>
+        <div id="logo">
             <img alt="Google" id="google-logo" src="googlelogo.png" />
+        </div>
+        <div id="searchbar">
             <input id="search-bar" type="search" placeholder="Search">
             <form></form>
+        </div>
+        <div id=buttons>
+            <button id="search-button">Google Search</button>
+            <button id="lucky-button">I'm Feeling Lucky</button>
         </div>
     </body>
 
