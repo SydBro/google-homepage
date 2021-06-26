@@ -35,13 +35,6 @@
                 padding-bottom: 20px;
                 display: block;
             }
-            .top-menu {
-
-            }
-            .bottom-menu {
-                position: fixed;
-                bottom: 10px;
-            }
             .top-left-menu {
                 float: left;
             }
@@ -49,15 +42,21 @@
                 float: right;
             }
             .bottom-left-menu {
-                float: left;
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                display: flex;
             }
             .bottom-right-menu {
-                float: right;
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                display: flex;
             }
         </style>
     </head>
     <body>
-        <ul class="top-menu">
+        <ul>
             <li class="top-left-menu"><a href="#">About</a></li>
             <li class="top-left-menu"><a href="#">Store</a></li>
             <li class="top-right-menu"><a href="#">Images</a></li>
@@ -76,14 +75,18 @@
                 <button id="lucky-button">I'm Feeling Lucky</button>
             </div>
         </div>
-        <ul class="bottom-menu">
-            <li class="bottom-left-menu"><a href="#">Advertising</a></li>
-            <li class="bottom-left-menu"><a href="#">Business</a></li>
-            <li class="bottom-left-menu"><a href="#">How Search Works</a></li>
-            <li class="bottom-right-menu"><a href="#">Settings</a></li>
-            <li class="bottom-right-menu"><a href="#">Terms</a></li>
-            <li class="bottom-right-menu"><a href="#">Privacy</a></li>
-        </ul>  
+        <div>
+            <ul class="bottom-left-menu">
+                <li><a href="#">Advertising</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">How Search Works</a></li>
+            </ul> 
+            <ul class="bottom-right-menu">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </div>
     </body>
 
 </html>
