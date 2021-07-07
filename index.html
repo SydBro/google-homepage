@@ -35,29 +35,45 @@
                 padding-bottom: 20px;
                 display: block;
             }
+
+            .flex-body{
+                display: flex;
+                flex-direction: column;
+            }
+            
             .top-left-menu {
                 float: left;
             }
             .top-right-menu {
                 float: right;
             }
+
+            .baba-is-empty{
+                flex-grow: 2;
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+
             .bottom-menu {
-                width: 100%;
-                color: black;
-                background: black;
-                background-color: black;
-                position: absolute;
-                bottom: 0;
+                justify-content: space-evenly;
+                display: flex;
+                flex-wrap: wrap;
             }
-            .bottom-left-menu li {
-                float: left;
+            .bottom-left-menu {
+                justify-content: flex-start;
+                display: flex;
+                flex-wrap: wrap;
+                flex-grow: 1;
             }
-            .bottom-right-menu li {
-                float: right;
+            .bottom-right-menu {
+                justify-content: flex-end;
+                display: flex;
+                flex-wrap: wrap;
+                flex-grow: 1;
             }
         </style>
     </head>
-    <body>
+    <body class="flex-body">
         <ul>
             <li class="top-left-menu"><a href="#">About</a></li>
             <li class="top-left-menu"><a href="#">Store</a></li>
@@ -77,6 +93,10 @@
                 <button id="search-button">Google Search</button>
                 <button id="lucky-button">I'm Feeling Lucky</button>
             </div>
+        </div>
+
+        <div class="baba-is-empty">
+            
         </div>
 
         <div class="bottom-menu">
