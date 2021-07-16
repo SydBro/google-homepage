@@ -3,24 +3,17 @@
 
     <head>
         <style>
+            .flex-body {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
             #google-elements {
+                margin: auto;
                 padding: 155px;
             }
             #logo {
-                display: flex;
-                justify-content: center;
-                margin: auto;
-                padding: 50px;
-            }
-            #searchbar {
-                display: flex;
-                justify-content: center;
-                margin: auto;
-            }
-            #buttons {
-                display: flex;
-                justify-content: center;
-                margin: auto;
+                padding-bottom: 50px;
             }
             button {
                 margin: 10px;
@@ -36,9 +29,27 @@
                 display: block;
             }
 
-            .flex-body{
+            .baba-is-empty{
+                flex-grow: 1;
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+
+            #searchbar {
                 display: flex;
-                flex-direction: column;
+                position: relative;
+            }
+            #search-icon {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+            }
+            #search-bar {
+                border: 1px solid lightgrey;
+                border-radius: 40px;
+                height: 45px;
+                width: 600px;
+                padding: 2px 20px 4px 30px;
             }
             
             .top-left-menu {
@@ -46,12 +57,6 @@
             }
             .top-right-menu {
                 float: right;
-            }
-
-            .baba-is-empty{
-                flex-grow: 2;
-                flex-shrink: 0;
-                box-sizing: border-box;
             }
 
             .bottom-menu {
@@ -83,10 +88,11 @@
 
         <div id="google-elements">
             <div id="logo">
-                <img alt="Google" id="google-logo" src="googlelogo.png" />
+                <img alt="Google" id="google-logo" src="googlelogo.png"/>
             </div>
             <div id="searchbar">
-                <input id="search-bar" type="search" placeholder="Search">
+                <img alt="search-icon" id="search-icon" src="ic_search_black_18dp.png"/>
+                <input id="search-bar" type="search" placeholder="">
                 <form></form>
             </div>
             <div id=buttons>
