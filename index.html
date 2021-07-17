@@ -7,35 +7,22 @@
                 display: flex;
                 flex-direction: column;
                 height: 100%;
+                width: 100%;
             }
             #google-elements {
                 margin: auto;
                 padding: 155px;
             }
             #logo {
+                display: flex;
                 padding-bottom: 50px;
             }
-            button {
-                margin: 10px;
-                margin-top: 30px;
-            }
-            li a {
-                margin-right: 30px;
-            }
-            ul {
-                font-size: 15px;
-                list-style-type: none;
-                padding-bottom: 20px;
-                display: block;
+
+            #google-logo{
+                margin: auto;
             }
 
-            .baba-is-empty{
-                flex-grow: 1;
-                flex-shrink: 0;
-                box-sizing: border-box;
-            }
-
-            #searchbar {
+            #search {
                 display: flex;
                 position: relative;
             }
@@ -50,6 +37,31 @@
                 height: 45px;
                 width: 600px;
                 padding: 2px 20px 4px 30px;
+            }
+
+            button {
+                margin: 5px;
+                margin-top: 30px;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 15px 10px 15px;
+                background-color: #f8f9fa;
+            }
+
+            li a {
+                margin-right: 30px;
+            }
+            ul {
+                font-size: 15px;
+                list-style-type: none;
+                padding-bottom: 20px;
+                display: block;
+            }
+
+            .baba-is-empty{
+                flex: 1 0 auto;
+                box-sizing: border-box;
+                background-color: red;
             }
             
             .top-left-menu {
@@ -90,7 +102,7 @@
             <div id="logo">
                 <img alt="Google" id="google-logo" src="googlelogo.png"/>
             </div>
-            <div id="searchbar">
+            <div id="search">
                 <img alt="search-icon" id="search-icon" src="ic_search_black_18dp.png"/>
                 <input id="search-bar" type="search" placeholder="">
                 <form></form>
@@ -102,7 +114,7 @@
         </div>
 
         <div class="baba-is-empty">
-            
+            sfdgnds
         </div>
 
         <div class="bottom-menu">
