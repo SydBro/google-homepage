@@ -13,6 +13,11 @@
                 margin: auto;
                 padding-top: 180px;
             }
+            #google-menu:hover {
+                background-color: lightsteelblue;
+                padding: 0;
+            }
+
             #logo {
                 display: flex;
                 padding-bottom: 20px;
@@ -38,7 +43,10 @@
                 width: 600px;
                 padding: 2px 20px 4px 30px;
             }
-
+            #buttons{
+                display: flex;
+                margin: 0px 150px 0px 150px;
+            }
             button {
                 margin: auto;
                 margin-top: 30px;
@@ -106,6 +114,8 @@
         <ul>
             <li class="top-left-menu"><a href="#">About</a></li>
             <li class="top-left-menu"><a href="#">Store</a></li>
+            <li class="top-right-menu" id="account-icon"><a href="https://github.com/SydBro/" title="SydBro @ GitHub" target="_blank"><img src="outline_account_circle_black_24dp.png"></a></li>
+            <li class="top-right-menu" id="google-menu"><a href="#" title="Google Apps"><img src="outline_menu_black_24dp.png" /></a></li>
             <li class="top-right-menu"><a href="#">Images</a></li>
             <li class="top-right-menu"><a href="#">Gmail</a></li>
         </ul>
@@ -119,7 +129,7 @@
                 <input id="search-bar" type="search" placeholder="">
                 <form></form>
             </div>
-            <div id=buttons>
+            <div id="buttons">
                 <button id="search-button">Google Search</button>
                 <button id="lucky-button">I'm Feeling Lucky</button>
             </div>
